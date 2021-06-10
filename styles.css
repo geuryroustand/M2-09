@@ -1,0 +1,30 @@
+:root {
+  --primaryColor: #3c8dad !important;
+  --secundarycolor: #f5a962 !important;
+}
+
+.jumbotron {
+  background-color: var(--primaryColor);
+}
+
+.btn-bg {
+  background-color: var(--secundarycolor);
+}
+
+tr {
+  /* background-color: var(--primaryColor); */
+
+  animation: animation1;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+
+@keyframes animation1 {
+  to {
+    width: 30px;
+    height: 30px;
+    /* border-color: var(--primaryColor); */
+    border: 2px solid var(--primaryColor);
+  }
+}
